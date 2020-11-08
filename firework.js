@@ -42,7 +42,7 @@ class Firework {
   }
 
   explode() {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 186; i++) {
       const p = new Particle(this.firework.pos.x, this.firework.pos.y, this.hu, false);
       this.particles.push(p);
     }
