@@ -1,13 +1,11 @@
-// Daniel Shiffman
-// http://codingtra.in
-// https://youtu.be/CKeyIbT3vXI
-
 class Particle {
   constructor(x, y, hu, firework) {
     this.pos = createVector(x, y);
     this.firework = firework;
     this.lifespan = 255;
     this.hu = hu;
+    this.hy = random(255)
+    this.hi = random(255)
     this.acc = createVector(0, 0);
     if (this.firework) {
       this.vel = createVector(0, random(-12, -8));
@@ -44,10 +42,10 @@ class Particle {
 
     if (!this.firework) {
       strokeWeight(4);
-      stroke(this.hu, 255, 255, this.lifespan);
+      stroke(this.hu, this.hy, this.hi, this.lifespan);
     } else {
       strokeWeight(8);
-      stroke(this.hu, 255, 255);
+      stroke(this.hu, this.hy, this.hi);
     }
 
     point(this.pos.x, this.pos.y);
