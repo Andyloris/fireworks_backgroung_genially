@@ -1,1 +1,1 @@
-# fireworks_backgroung_genially
+# firework background for genially
