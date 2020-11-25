@@ -41,7 +41,7 @@ class Particle {
     colorMode(HSB);
 
     if (!this.firework) {
-      strokeWeight(4);
+      strokeWeight(6);
       stroke(this.hu, this.hy, this.hi, this.lifespan);
     } else {
       strokeWeight(8);
